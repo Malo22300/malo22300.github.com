@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malo Manceau - CV en ligne</title>
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+    <div id="overlay" onclick="closeImage()">
+        <img id="largeImage" src="" alt="Agrandissement de l'image">
+    </div>
+
+    <header>
+        <h1>Malo Manceau</h1>
+        <p>Étudiant en Terminale  - Passionné de sport, graphisme et langues</p>
+    </header>
+
+    <section class="about">
+        <img src="profil.jpg" alt="Photo de Malo Manceau" onclick="showImage(this.src)">
+    <p>Je suis un lycéen en Terminale général au <a href="https://lycee-ledantec.fr/" target="_blank" rel="noopener noreferrer">lycée Félix Le Dantec</a> à Lannion. J’aime le graphisme, les langues étrangères et les activités manuelles. Fiable et organisé, je cherche toujours à apprendre et à progresser.</p>
+</section>
+    </section>
+
+    <section class="skills">
+        <h2>Mes Compétences : </h2>
+        <ul>
+            <li>💻 Programmation (NSI) : HTML, CSS, Python, JavaScript</li>
+            <li>🎨 Graphisme : Photoshop, Imovie, dessin traditionnel</li>
+            <li>🗣️ Langues : Français (natif), Anglais (LV1), Espagnol (LV2)</li>
+            <li>🚗 Permis B </li>
+            <li>📅 Organisation et ponctualité</li>
+        </ul>
+    </section>
+
+    <section class="experience">
+        <h2>Expériences & Formations : </h2>
+        <p><strong>2024/2025 - Terminale</strong> | Spécialités : NSI, LLCE + Maths complémentaire</p>
+        <p><strong>2021 - Troisième</strong> | Stage dans l'entreprise " Coqueliko " à Lannion ( entreprise de communication ) </p>
+        <p><strong>2021 - Brevet des collèges</strong> | Mention Très Bien</p>
+        <p><strong>2019-2022 - École de dessin</strong> | Formation artistique à Lannion</p>
+    </section>
+	 
+	 <section class="experience">
+    <h2>Pour en savoir plus sur moi :</h2>
+    <ul style="list-style-type: none; padding: 0;">
+    <li><a href="index2.html" class="cta-button">Clique ici</a></li>
+</ul>
+</section>
+<section class="contact">
+        <h2>Contact : </h2>
+        <p>📧 <a href="mailto:manceaumalo@gmail.com">manceaumalo@gmail.com</a></p>
+        <p>📧 <a href="0601868038">06 01 86 80 38 </a></p>
+        <p>📍 Lannion, France</p>
+    </section>
+
+    <footer>
+        <p>© 2025 Malo Manceau - Tous droits réservés</p>
+    </footer>
+
+    <script>
+        // Fonction pour afficher l'image en grand
+        function showImage(src) {
+            const overlay = document.getElementById('overlay');
+            const largeImage = document.getElementById('largeImage');
+            largeImage.src = src;
+            overlay.style.display = 'flex';
+        }
+
+        // Fonction pour fermer l'overlay
+        function closeImage() {
+            document.getElementById('overlay').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
